@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunu-Idées</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>💡 Sunu-Idées</h1>
+        <p>Le tableau collaboratif de la Promo P9</p>
+    </header>
+
+    <main>
+
+        <section class="form-section">
+            <h2>Proposer une idée</h2>
+
+            <form id="ideaForm">
+
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Titre de l'idée"
+                    required
+                >
+
+                <select id="category" required>
+                    <option value="">Choisir une catégorie</option>
+                    <option value="Pédagogie">Pédagogie</option>
+                    <option value="Événement">Événement</option>
+                    <option value="Vie de campus">Vie de campus</option>
+                    <option value="Amélioration technique">
+                        Amélioration technique
+                    </option>
+                </select>
+
+                <textarea
+                    id="description"
+                    placeholder="Décrivez votre idée..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Ajouter l'idée
+                </button>
+
+            </form>
+        </section>
+
+        <section class="ideas-section">
+            <h2>Mur des idées</h2>
+
+            <div id="ideasContainer">
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
